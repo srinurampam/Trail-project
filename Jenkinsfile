@@ -13,11 +13,11 @@ pipeline {
         
         
         stage('git') {
-            steps {
+            steps { 
                 echo 'clonning Repository'
                 git branch: 'main', url: 'https://github.com/mnagen/spring-petclinic.git'
                 
-                echo 'Repo clone successfully'
+                echo 'Repo clone successfully in remote'
             }
             
         }
